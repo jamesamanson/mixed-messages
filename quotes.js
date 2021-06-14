@@ -8,16 +8,18 @@ const chooseQuote = () => {
 
 chooseQuote()
 
-const partOne = ['The world','Life','Everything']
+const partOne = ['The world','Life','Everything','Your future']
 
-const partTwo = ['can be','is','has the potential to be']
+const partTwo = ['can be','is','has the potential to be','will be']
 
-const partThree = ['incredible.','what you make of it.','a place of reflection.']
+const partThree = ['incredible.','what you make of it.','a place of reflection.','exciting.']
 
-let randNumberTwo = Math.floor(Math.random()*3)
+const randNumberTwo = (lengthOfArray) => {
+    return Math.round(Math.random()*lengthOfArray)
+}
 
 const makeAQuote = () => {
-    console.log(`${partOne[randNumberTwo]} ${partTwo[randNumberTwo]} ${partThree[randNumberTwo]}`)
+    console.log(`${partOne[randNumberTwo(3)]} ${partTwo[randNumberTwo(3)]} ${partThree[randNumberTwo(3)]}`)
 }
 
 makeAQuote()
