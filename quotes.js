@@ -13,3 +13,11 @@ const partOne = ['The world','Life','Everything']
 const partTwo = ['can be','is','has the potential to be']
 
 const partThree = ['incredible.','what you make of it.','a place of reflection.']
+
+let randNumberTwo = Math.floor(Math.random()*3)
+
+const makeAQuote = () => {
+    console.log(`${partOne[randNumberTwo]} ${partTwo[randNumberTwo]} ${partThree[randNumberTwo]}`)
+}
+
+makeAQuote()
